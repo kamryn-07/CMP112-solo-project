@@ -5,8 +5,8 @@ public class Movement : MonoBehaviour
 {
 
     // constants
-    const float SPEED_FACTOR_X = 0.075f;
-    const float SPEED_FACTOR_Y = 0.05f;
+    public float SPEED_FACTOR_X = 0.075f;
+    public float SPEED_FACTOR_Y = 0.05f;
 
     // public references
     public GameObject player;
