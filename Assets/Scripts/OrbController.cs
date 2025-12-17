@@ -57,6 +57,7 @@ public class OrbController : MonoBehaviour
         timeElapsed += Time.deltaTime;
 
     }
+
     private void OnCollisionEnter(Collision collision)
     {
 
