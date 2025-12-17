@@ -5,7 +5,7 @@ public class CameraController : MonoBehaviour
 {
 
     // constants / public vars
-    Vector3 CAMERA_START_OFFSET_POS = new Vector3(0, 1000f, -300f);
+    Vector3 CAMERA_START_OFFSET_POS = new Vector3(0f, 1000f, -300f);
     Vector3 CAMERA_OFFSET_POS = new Vector3(0, 20f, -40f);
     Vector3 CAMERA_OFFSET_ROT = new Vector3(27.5f, 0, 0);
 

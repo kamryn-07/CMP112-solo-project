@@ -23,6 +23,7 @@ public class Movement : MonoBehaviour
     public GameObject sprite;
     public SoundController soundController;
     public AudioSource walk;
+    public AudioSource fall;
 
     // variable initialisation
 
@@ -100,6 +101,14 @@ public class Movement : MonoBehaviour
         else if (moveVector.x < 0)
         {
             spriteRenderer.flipX = true;
+        }
+
+        // check if player has fallen
+        if (transform.position.y < 4.5f)
+        {
+            // play sound and reset position
+            fall.Play();
+            transform.position = new Vector3(-25f, 5f, 0f);
         }
 
         timeElapsed += Time.deltaTime;
